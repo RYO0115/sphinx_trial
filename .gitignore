@@ -20,3 +20,5 @@ bin
 obj
 html
 xml
+
+.DS_Store
