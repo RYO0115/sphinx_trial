@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="classCharacter" kind="class"><name>Character</name>
+    <member refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kind="variable"><name>name</name></member>
+    <member refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kind="variable"><name>hp</name></member>
+    <member refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" kind="variable"><name>maxHp</name></member>
+    <member refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kind="variable"><name>attackPower</name></member>
+    <member refid="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" kind="function"><name>Character</name></member>
+    <member refid="classCharacter_1a3333a88ae593c36b229c90371e935d42" kind="function"><name>~Character</name></member>
+    <member refid="classCharacter_1ae785f187fe5c904f7e4b4984b3837739" kind="function"><name>attack</name></member>
+    <member refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" kind="function"><name>takeDamage</name></member>
+    <member refid="classCharacter_1a6581a9a16111768ae65603d060fca9d7" kind="function"><name>isDead</name></member>
+    <member refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" kind="function"><name>getName</name></member>
+    <member refid="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" kind="function"><name>getHp</name></member>
+    <member refid="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" kind="function"><name>getMaxHp</name></member>
+    <member refid="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" kind="function"><name>getAttackPower</name></member>
+  </compound>
+  <compound refid="classDice" kind="class"><name>Dice</name>
+    <member refid="classDice_1a2803ef3c9835a2b3e86db13ba44afcc3" kind="variable"><name>mt</name></member>
+    <member refid="classDice_1a70417322eb1e60eabe99833a58c11946" kind="function"><name>init</name></member>
+    <member refid="classDice_1ae630a3652a5bce7c8ffc275afa32dd39" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="classGameManager" kind="class"><name>GameManager</name>
+    <member refid="classGameManager_1a04f1e6cac52c024d915f415731b41e62" kind="variable"><name>hero</name></member>
+    <member refid="classGameManager_1aecb84e46defcf25d0ac62fa2b607a867" kind="variable"><name>monster</name></member>
+    <member refid="classGameManager_1aa0e2424dc1a39d380e5b6605b179bf05" kind="function"><name>GameManager</name></member>
+    <member refid="classGameManager_1a8460b2f4f44c19dd405e4163fe6cb5cf" kind="function"><name>start</name></member>
+    <member refid="classGameManager_1a7d937a4c50b3311f658d91a00bbb98c6" kind="function"><name>battle</name></member>
+    <member refid="classGameManager_1a6cfc3d93f1868aab742f251ce0b35317" kind="function"><name>heroTurn</name></member>
+    <member refid="classGameManager_1a52d5b211629066a896cb2e78709951ed" kind="function"><name>monsterTurn</name></member>
+    <member refid="classGameManager_1a225abf0e0bec3194bb209ba5331eb794" kind="function"><name>showStatus</name></member>
+  </compound>
+  <compound refid="classHero" kind="class"><name>Hero</name>
+    <member refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kind="variable"><name>mp</name></member>
+    <member refid="classHero_1a49ca09652b2e3c1a07c94bf863870279" kind="variable"><name>maxMp</name></member>
+    <member refid="classHero_1a154e14b318c5460a8252cb92fe6d8c8a" kind="variable"><name>skills</name></member>
+    <member refid="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9" kind="function"><name>Hero</name></member>
+    <member refid="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f" kind="function"><name>attack</name></member>
+    <member refid="classHero_1af426591c0d9b7f102884660cf9678080" kind="function"><name>useSkill</name></member>
+    <member refid="classHero_1a4e8d632441460ab9d32d18bb29398e31" kind="function"><name>heal</name></member>
+    <member refid="classHero_1afea6f58323b192d8c7ccaad277f1f0fa" kind="function"><name>recoverMp</name></member>
+    <member refid="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6" kind="function"><name>payMp</name></member>
+    <member refid="classHero_1ab01d0a40cef1d2b44d7ef78dce382961" kind="function"><name>getMp</name></member>
+    <member refid="classHero_1a5a6436c479ab877abad79c542a0c955f" kind="function"><name>getMaxMp</name></member>
+    <member refid="classHero_1a502b535135a1c39c4593974c169e1840" kind="function"><name>getSkills</name></member>
+    <member refid="classHero_1af895fd6d4562457ea523ec695ad75f61" kind="function"><name>addSkill</name></member>
+  </compound>
+  <compound refid="classMonster" kind="class"><name>Monster</name>
+    <member refid="classMonster_1a4c512f4803f7722f928aa17b2b9b01d3" kind="function"><name>Monster</name></member>
+    <member refid="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb" kind="function"><name>attack</name></member>
+    <member refid="classMonster_1ab5aaac282b637d56c4d3d3a3f3815c41" kind="function"><name>performAction</name></member>
+  </compound>
+  <compound refid="classSkill" kind="class"><name>Skill</name>
+    <member refid="classSkill_1a1271744546e69259d6ac31013900c49e" kind="variable"><name>name</name></member>
+    <member refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" kind="variable"><name>mpCost</name></member>
+    <member refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" kind="variable"><name>power</name></member>
+    <member refid="classSkill_1a8deae6639996545a133cf1b17d082425" kind="variable"><name>type</name></member>
+    <member refid="classSkill_1ac647fa947e889de5019dd2735c7b420c" kind="function"><name>Skill</name></member>
+    <member refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" kind="function"><name>getName</name></member>
+    <member refid="classSkill_1a992060b5dd051b5de10fa2a8434a9616" kind="function"><name>getMpCost</name></member>
+    <member refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" kind="function"><name>getPower</name></member>
+    <member refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" kind="function"><name>getType</name></member>
+  </compound>
+  <compound refid="GameManager_8h" kind="file"><name>GameManager.h</name>
+  </compound>
+  <compound refid="Character_8h" kind="file"><name>Character.h</name>
+  </compound>
+  <compound refid="Hero_8h" kind="file"><name>Hero.h</name>
+  </compound>
+  <compound refid="Monster_8h" kind="file"><name>Monster.h</name>
+  </compound>
+  <compound refid="Skill_8h" kind="file"><name>Skill.h</name>
+    <member refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kind="enum"><name>SkillType</name></member>
+    <member refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234ac6ddd0f72ff2fd344693b9ca8d483871" kind="enumvalue"><name>ATTACK</name></member>
+    <member refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234a3a25f1406daa84785c1291a745018fae" kind="enumvalue"><name>HEAL</name></member>
+  </compound>
+  <compound refid="Dice_8h" kind="file"><name>Dice.h</name>
+  </compound>
+  <compound refid="GameManager_8cpp" kind="file"><name>GameManager.cpp</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="Character_8cpp" kind="file"><name>Character.cpp</name>
+  </compound>
+  <compound refid="Hero_8cpp" kind="file"><name>Hero.cpp</name>
+  </compound>
+  <compound refid="Monster_8cpp" kind="file"><name>Monster.cpp</name>
+  </compound>
+  <compound refid="Skill_8cpp" kind="file"><name>Skill.cpp</name>
+  </compound>
+  <compound refid="Dice_8cpp" kind="file"><name>Dice.cpp</name>
+  </compound>
+  <compound refid="dir_3d69f64eaf81436fe2b22361382717e5" kind="dir"><name>include/core</name>
+  </compound>
+  <compound refid="dir_aebb8dcc11953d78e620bbef0b9e2183" kind="dir"><name>src/core</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_828b612f8450ccb3091aade92090c8e3" kind="dir"><name>include/models</name>
+  </compound>
+  <compound refid="dir_bdeba5f06b852fec80257c0bf4c3c36e" kind="dir"><name>src/models</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_821002d4f10779a80d4fb17bc32f21f1" kind="dir"><name>include/utils</name>
+  </compound>
+  <compound refid="dir_313caf1132e152dd9b58bea13a4052ca" kind="dir"><name>src/utils</name>
+  </compound>
+</doxygenindex>

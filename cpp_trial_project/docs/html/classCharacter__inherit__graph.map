@@ -1,0 +1,5 @@
+<map id="Character" name="Character">
+<area shape="rect" id="node1" title="Abstract base class for all characters in the game." alt="" coords="33,5,119,32"/>
+<area shape="rect" id="node2" href="$classHero.html" title="Represents the player&#39;s character (Hero)." alt="" coords="5,80,59,107"/>
+<area shape="rect" id="node3" href="$classMonster.html" title="Represents an enemy character (Monster)." alt="" coords="83,80,157,107"/>
+</map>

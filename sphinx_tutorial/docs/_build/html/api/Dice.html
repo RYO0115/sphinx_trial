@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Dice &#8212; Sphinx Tutorial 0.1 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=be13464f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="GameManager" href="GameManager.html" />
+    <link rel="prev" title="Character" href="Character.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="dice">
+<h1>Dice<a class="headerlink" href="#dice" title="Link to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv44Dice">
+<span id="_CPPv34Dice"></span><span id="_CPPv24Dice"></span><span id="Dice"></span><span class="target" id="classDice"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Dice</span></span></span><a class="headerlink" href="#_CPPv44Dice" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Utility class for random number generation. </p>
+<p>Uses the Mersenne Twister engine for high-quality random numbers. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-static-functions">Public Static Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Dice4initEv">
+<span id="_CPPv3N4Dice4initEv"></span><span id="_CPPv2N4Dice4initEv"></span><span id="Dice::init"></span><span class="target" id="classDice_1a70417322eb1e60eabe99833a58c11946"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">init</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Dice4initEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Initializes the random number generator. </p>
+<p>Should be called once at the beginning of the program. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Dice3getEii">
+<span id="_CPPv3N4Dice3getEii"></span><span id="_CPPv2N4Dice3getEii"></span><span id="Dice::get__i.i"></span><span class="target" id="classDice_1ae630a3652a5bce7c8ffc275afa32dd39"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">min</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">max</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Dice3getEii" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Generates a random integer within a specified range. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min</strong> -- The minimum value (inclusive). </p></li>
+<li><p><strong>max</strong> -- The maximum value (inclusive). </p></li>
+</ul>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>A random integer between min and max. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-static-attributes">Private Static Attributes</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Dice2mtE">
+<span id="_CPPv3N4Dice2mtE"></span><span id="_CPPv2N4Dice2mtE"></span><span id="Dice::mt__std::mt19937"></span><span class="target" id="classDice_1a2803ef3c9835a2b3e86db13ba44afcc3"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">mt19937</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mt</span></span></span><a class="headerlink" href="#_CPPv4N4Dice2mtE" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Mersenne Twister random number generator. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<p><strong>Source Code</strong></p>
+<p>Header (<code class="docutils literal notranslate"><span class="pre">include/utils/Dice.h</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#ifndef DICE_H</span>
+<span class="linenos"> 2</span><span class="cp">#define DICE_H</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;random&gt;</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="cm">/**</span>
+<span class="linenos"> 7</span><span class="cm"> * @brief Utility class for random number generation.</span>
+<span class="linenos"> 8</span><span class="cm"> *</span>
+<span class="linenos"> 9</span><span class="cm"> * Uses the Mersenne Twister engine for high-quality random numbers.</span>
+<span class="linenos">10</span><span class="cm"> */</span>
+<span class="linenos">11</span><span class="k">class</span><span class="w"> </span><span class="nc">Dice</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="k">public</span><span class="o">:</span>
+<span class="linenos">13</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">14</span><span class="cm">     * @brief Initializes the random number generator.</span>
+<span class="linenos">15</span><span class="cm">     *</span>
+<span class="linenos">16</span><span class="cm">     * Should be called once at the beginning of the program.</span>
+<span class="linenos">17</span><span class="cm">     */</span>
+<span class="linenos">18</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">init</span><span class="p">();</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">21</span><span class="cm">     * @brief Generates a random integer within a specified range.</span>
+<span class="linenos">22</span><span class="cm">     *</span>
+<span class="linenos">23</span><span class="cm">     * @param min The minimum value (inclusive).</span>
+<span class="linenos">24</span><span class="cm">     * @param max The maximum value (inclusive).</span>
+<span class="linenos">25</span><span class="cm">     * @return A random integer between min and max.</span>
+<span class="linenos">26</span><span class="cm">     */</span>
+<span class="linenos">27</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="k">private</span><span class="o">:</span>
+<span class="linenos">30</span><span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="w"> </span><span class="n">mt</span><span class="p">;</span><span class="w"> </span><span class="c1">///&lt; Mersenne Twister random number generator.</span>
+<span class="linenos">31</span><span class="p">};</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="cp">#endif </span><span class="c1">// DICE_H</span>
+</pre></div>
+</div>
+<p>Implementation (<code class="docutils literal notranslate"><span class="pre">src/utils/Dice.cpp</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;utils/Dice.h&quot;</span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;ctime&gt;</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="n">std</span><span class="o">::</span><span class="n">mt19937</span><span class="w"> </span><span class="n">Dice</span><span class="o">::</span><span class="n">mt</span><span class="p">;</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kt">void</span><span class="w"> </span><span class="nf">Dice::init</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">random_device</span><span class="w"> </span><span class="n">rd</span><span class="p">;</span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="n">mt</span><span class="p">.</span><span class="n">seed</span><span class="p">(</span><span class="n">rd</span><span class="p">());</span>
+<span class="linenos"> 9</span><span class="p">}</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="kt">int</span><span class="w"> </span><span class="nf">Dice::get</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">uniform_int_distribution</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dist</span><span class="p">(</span><span class="n">min</span><span class="p">,</span><span class="w"> </span><span class="n">max</span><span class="p">);</span>
+<span class="linenos">13</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">dist</span><span class="p">(</span><span class="n">mt</span><span class="p">);</span>
+<span class="linenos">14</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Sphinx Tutorial</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>ナビゲーション</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/index.html">仕様書</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Dice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameManager.html">GameManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Hero.html">Hero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Monster.html">Monster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Skill.html">Skill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">Sphinx Tutorial documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../api_reference.html">API Reference</a><ul>
+      <li>Previous: <a href="Character.html" title="前の章へ">Character</a></li>
+      <li>Next: <a href="GameManager.html" title="次の章へ">GameManager</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Ryota Amano.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/Dice.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Hero &#8212; Sphinx Tutorial 0.1 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=be13464f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="Monster" href="Monster.html" />
+    <link rel="prev" title="GameManager" href="GameManager.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="hero">
+<h1>Hero<a class="headerlink" href="#hero" title="Link to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv44Hero">
+<span id="_CPPv34Hero"></span><span id="_CPPv24Hero"></span><span id="Hero"></span><span class="target" id="classHero"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Hero</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><a class="headerlink" href="#_CPPv44Hero" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Represents the player's character (<a class="reference internal" href="#classHero"><span class="std std-ref">Hero</span></a>). </p>
+<p>Inherits from <a class="reference internal" href="Character.html#classCharacter"><span class="std std-ref">Character</span></a> and adds mana points (MP) and skill capabilities. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero4HeroENSt6stringEiii">
+<span id="_CPPv3N4Hero4HeroENSt6stringEiii"></span><span id="_CPPv2N4Hero4HeroENSt6stringEiii"></span><span id="Hero::Hero__ss.i.i.i"></span><span class="target" id="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9"></span><span class="sig-name descname"><span class="n"><span class="pre">Hero</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hp</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">attackPower</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">mp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero4HeroENSt6stringEiii" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Constructor for <a class="reference internal" href="#classHero"><span class="std std-ref">Hero</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> -- The name of the hero. </p></li>
+<li><p><strong>hp</strong> -- The initial HP. </p></li>
+<li><p><strong>attackPower</strong> -- The base attack power. </p></li>
+<li><p><strong>mp</strong> -- The initial MP. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero6attackER9Character">
+<span id="_CPPv3N4Hero6attackER9Character"></span><span id="_CPPv2N4Hero6attackER9Character"></span><span id="Hero::attack__CharacterR"></span><span class="target" id="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">attack</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N4Hero6attackER9Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Attacks a target character. </p>
+<p>Overrides the base attack method to include critical hit logic or other hero-specific mechanics.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target</strong> -- The character to attack. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero8useSkillERK5SkillR9Character">
+<span id="_CPPv3N4Hero8useSkillERK5SkillR9Character"></span><span id="_CPPv2N4Hero8useSkillERK5SkillR9Character"></span><span id="Hero::useSkill__SkillCR.CharacterR"></span><span class="target" id="classHero_1af426591c0d9b7f102884660cf9678080"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">useSkill</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="Skill.html#_CPPv45Skill" title="Skill"><span class="n"><span class="pre">Skill</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">skill</span></span>, <a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero8useSkillERK5SkillR9Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Uses a skill on a target. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>skill</strong> -- The skill to use. </p></li>
+<li><p><strong>target</strong> -- The target of the skill. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero4healEi">
+<span id="_CPPv3N4Hero4healEi"></span><span id="_CPPv2N4Hero4healEi"></span><span id="Hero::heal__i"></span><span class="target" id="classHero_1a4e8d632441460ab9d32d18bb29398e31"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">heal</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">amount</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero4healEi" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Heals the hero by a specified amount. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>amount</strong> -- The amount of HP to recover. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero9recoverMpEi">
+<span id="_CPPv3N4Hero9recoverMpEi"></span><span id="_CPPv2N4Hero9recoverMpEi"></span><span id="Hero::recoverMp__i"></span><span class="target" id="classHero_1afea6f58323b192d8c7ccaad277f1f0fa"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">recoverMp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">amount</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero9recoverMpEi" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Recovers MP by a specified amount. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>amount</strong> -- The amount of MP to recover. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero5payMpEi">
+<span id="_CPPv3N4Hero5payMpEi"></span><span id="_CPPv2N4Hero5payMpEi"></span><span id="Hero::payMp__i"></span><span class="target" id="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">payMp</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">amount</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero5payMpEi" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Attempts to pay a specified amount of MP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>amount</strong> -- The amount of MP to spend. </p>
+</dd>
+<dt class="field-even">戻り値<span class="colon">:</span></dt>
+<dd class="field-even"><p>true if MP was sufficient and spent, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Hero5getMpEv">
+<span id="_CPPv3NK4Hero5getMpEv"></span><span id="_CPPv2NK4Hero5getMpEv"></span><span id="Hero::getMpC"></span><span class="target" id="classHero_1ab01d0a40cef1d2b44d7ef78dce382961"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Hero5getMpEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the current MP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current MP. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Hero8getMaxMpEv">
+<span id="_CPPv3NK4Hero8getMaxMpEv"></span><span id="_CPPv2NK4Hero8getMaxMpEv"></span><span id="Hero::getMaxMpC"></span><span class="target" id="classHero_1a5a6436c479ab877abad79c542a0c955f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMaxMp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Hero8getMaxMpEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the maximum MP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The maximum MP. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK4Hero9getSkillsEv">
+<span id="_CPPv3NK4Hero9getSkillsEv"></span><span id="_CPPv2NK4Hero9getSkillsEv"></span><span id="Hero::getSkillsC"></span><span class="target" id="classHero_1a502b535135a1c39c4593974c169e1840"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="Skill.html#_CPPv45Skill" title="Skill"><span class="n"><span class="pre">Skill</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="sig-name descname"><span class="n"><span class="pre">getSkills</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK4Hero9getSkillsEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the list of skills learned by the hero. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A constant reference to the vector of skills. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero8addSkillERK5Skill">
+<span id="_CPPv3N4Hero8addSkillERK5Skill"></span><span id="_CPPv2N4Hero8addSkillERK5Skill"></span><span id="Hero::addSkill__SkillCR"></span><span class="target" id="classHero_1af895fd6d4562457ea523ec695ad75f61"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addSkill</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="Skill.html#_CPPv45Skill" title="Skill"><span class="n"><span class="pre">Skill</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">skill</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N4Hero8addSkillERK5Skill" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Adds a skill to the hero's repertoire. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>skill</strong> -- The skill to learn. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-private-members">Private Members</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero2mpE">
+<span id="_CPPv3N4Hero2mpE"></span><span id="_CPPv2N4Hero2mpE"></span><span id="Hero::mp__i"></span><span class="target" id="classHero_1ad06b9f69f67002823aa52e96b4e087b5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">mp</span></span></span><a class="headerlink" href="#_CPPv4N4Hero2mpE" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Current Magic Points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero5maxMpE">
+<span id="_CPPv3N4Hero5maxMpE"></span><span id="_CPPv2N4Hero5maxMpE"></span><span id="Hero::maxMp__i"></span><span class="target" id="classHero_1a49ca09652b2e3c1a07c94bf863870279"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">maxMp</span></span></span><a class="headerlink" href="#_CPPv4N4Hero5maxMpE" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Maximum Magic Points. </p>
+</dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv4N4Hero6skillsE">
+<span id="_CPPv3N4Hero6skillsE"></span><span id="_CPPv2N4Hero6skillsE"></span><span id="Hero::skills__std::vector:Skill:"></span><span class="target" id="classHero_1a154e14b318c5460a8252cb92fe6d8c8a"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><a class="reference internal" href="Skill.html#_CPPv45Skill" title="Skill"><span class="n"><span class="pre">Skill</span></span></a><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">skills</span></span></span><a class="headerlink" href="#_CPPv4N4Hero6skillsE" title="Link to this definition">¶</a><br /></dt>
+<dd><p>List of learned skills. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<p><strong>Source Code</strong></p>
+<p>Header (<code class="docutils literal notranslate"><span class="pre">include/models/Hero.h</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#ifndef HERO_H</span>
+<span class="linenos"> 2</span><span class="cp">#define HERO_H</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Character.h&quot;</span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Skill.h&quot;</span>
+<span class="linenos"> 6</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/**</span>
+<span class="linenos"> 9</span><span class="cm"> * @brief Represents the player&#39;s character (Hero).</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * Inherits from Character and adds mana points (MP) and skill capabilities.</span>
+<span class="linenos">12</span><span class="cm"> */</span>
+<span class="linenos">13</span><span class="k">class</span><span class="w"> </span><span class="nc">Hero</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Character</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="k">public</span><span class="o">:</span>
+<span class="linenos">15</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">16</span><span class="cm">     * @brief Constructor for Hero.</span>
+<span class="linenos">17</span><span class="cm">     *</span>
+<span class="linenos">18</span><span class="cm">     * @param name The name of the hero.</span>
+<span class="linenos">19</span><span class="cm">     * @param hp The initial HP.</span>
+<span class="linenos">20</span><span class="cm">     * @param attackPower The base attack power.</span>
+<span class="linenos">21</span><span class="cm">     * @param mp The initial MP.</span>
+<span class="linenos">22</span><span class="cm">     */</span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">Hero</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mp</span><span class="p">);</span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">26</span><span class="cm">     * @brief Attacks a target character.</span>
+<span class="linenos">27</span><span class="cm">     *</span>
+<span class="linenos">28</span><span class="cm">     * Overrides the base attack method to include critical hit logic or other hero-specific mechanics.</span>
+<span class="linenos">29</span><span class="cm">     *</span>
+<span class="linenos">30</span><span class="cm">     * @param target The character to attack.</span>
+<span class="linenos">31</span><span class="cm">     */</span>
+<span class="linenos">32</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">attack</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="linenos">33</span>
+<span class="linenos">34</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">35</span><span class="cm">     * @brief Uses a skill on a target.</span>
+<span class="linenos">36</span><span class="cm">     *</span>
+<span class="linenos">37</span><span class="cm">     * @param skill The skill to use.</span>
+<span class="linenos">38</span><span class="cm">     * @param target The target of the skill.</span>
+<span class="linenos">39</span><span class="cm">     */</span>
+<span class="linenos">40</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">useSkill</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Skill</span><span class="o">&amp;</span><span class="w"> </span><span class="n">skill</span><span class="p">,</span><span class="w"> </span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">);</span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">43</span><span class="cm">     * @brief Heals the hero by a specified amount.</span>
+<span class="linenos">44</span><span class="cm">     *</span>
+<span class="linenos">45</span><span class="cm">     * @param amount The amount of HP to recover.</span>
+<span class="linenos">46</span><span class="cm">     */</span>
+<span class="linenos">47</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">heal</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
+<span class="linenos">48</span>
+<span class="linenos">49</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">50</span><span class="cm">     * @brief Recovers MP by a specified amount.</span>
+<span class="linenos">51</span><span class="cm">     *</span>
+<span class="linenos">52</span><span class="cm">     * @param amount The amount of MP to recover.</span>
+<span class="linenos">53</span><span class="cm">     */</span>
+<span class="linenos">54</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">recoverMp</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
+<span class="linenos">55</span>
+<span class="linenos">56</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">57</span><span class="cm">     * @brief Attempts to pay a specified amount of MP.</span>
+<span class="linenos">58</span><span class="cm">     *</span>
+<span class="linenos">59</span><span class="cm">     * @param amount The amount of MP to spend.</span>
+<span class="linenos">60</span><span class="cm">     * @return true if MP was sufficient and spent, false otherwise.</span>
+<span class="linenos">61</span><span class="cm">     */</span>
+<span class="linenos">62</span><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">payMp</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">);</span>
+<span class="linenos">63</span>
+<span class="linenos">64</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">65</span><span class="cm">     * @brief Gets the current MP.</span>
+<span class="linenos">66</span><span class="cm">     * @return The current MP.</span>
+<span class="linenos">67</span><span class="cm">     */</span>
+<span class="linenos">68</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">69</span>
+<span class="linenos">70</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">71</span><span class="cm">     * @brief Gets the maximum MP.</span>
+<span class="linenos">72</span><span class="cm">     * @return The maximum MP.</span>
+<span class="linenos">73</span><span class="cm">     */</span>
+<span class="linenos">74</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMaxMp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">75</span>
+<span class="linenos">76</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">77</span><span class="cm">     * @brief Gets the list of skills learned by the hero.</span>
+<span class="linenos">78</span><span class="cm">     * @return A constant reference to the vector of skills.</span>
+<span class="linenos">79</span><span class="cm">     */</span>
+<span class="linenos">80</span><span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Skill</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">getSkills</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">81</span>
+<span class="linenos">82</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">83</span><span class="cm">     * @brief Adds a skill to the hero&#39;s repertoire.</span>
+<span class="linenos">84</span><span class="cm">     *</span>
+<span class="linenos">85</span><span class="cm">     * @param skill The skill to learn.</span>
+<span class="linenos">86</span><span class="cm">     */</span>
+<span class="linenos">87</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">addSkill</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Skill</span><span class="o">&amp;</span><span class="w"> </span><span class="n">skill</span><span class="p">);</span>
+<span class="linenos">88</span>
+<span class="linenos">89</span><span class="k">private</span><span class="o">:</span>
+<span class="linenos">90</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">mp</span><span class="p">;</span><span class="w">    </span><span class="c1">///&lt; Current Magic Points.</span>
+<span class="linenos">91</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">maxMp</span><span class="p">;</span><span class="w"> </span><span class="c1">///&lt; Maximum Magic Points.</span>
+<span class="linenos">92</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Skill</span><span class="o">&gt;</span><span class="w"> </span><span class="n">skills</span><span class="p">;</span><span class="w"> </span><span class="c1">///&lt; List of learned skills.</span>
+<span class="linenos">93</span><span class="p">};</span>
+<span class="linenos">94</span>
+<span class="linenos">95</span><span class="cp">#endif </span><span class="c1">// HERO_H</span>
+</pre></div>
+</div>
+<p>Implementation (<code class="docutils literal notranslate"><span class="pre">src/models/Hero.cpp</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Hero.h&quot;</span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;utils/Dice.h&quot;</span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">Hero</span><span class="o">::</span><span class="n">Hero</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">mp</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">Character</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="n">attackPower</span><span class="p">),</span><span class="w"> </span><span class="n">mp</span><span class="p">(</span><span class="n">mp</span><span class="p">),</span><span class="w"> </span><span class="n">maxMp</span><span class="p">(</span><span class="n">mp</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="kt">void</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">attack</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Dice</span><span class="o">::</span><span class="n">get</span><span class="p">(</span><span class="n">attackPower</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">attackPower</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="linenos">10</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; attacks &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">11</span><span class="w">    </span><span class="n">target</span><span class="p">.</span><span class="n">takeDamage</span><span class="p">(</span><span class="n">damage</span><span class="p">);</span>
+<span class="linenos">12</span><span class="p">}</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="kt">void</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">useSkill</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Skill</span><span class="o">&amp;</span><span class="w"> </span><span class="n">skill</span><span class="p">,</span><span class="w"> </span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; uses &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">skill</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">16</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">skill</span><span class="p">.</span><span class="n">getType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">SkillType</span><span class="o">::</span><span class="n">ATTACK</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">17</span><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">skill</span><span class="p">.</span><span class="n">getPower</span><span class="p">();</span><span class="w"> </span><span class="c1">// Fixed damage for simplicity, or could use Dice</span>
+<span class="linenos">18</span><span class="w">        </span><span class="n">target</span><span class="p">.</span><span class="n">takeDamage</span><span class="p">(</span><span class="n">damage</span><span class="p">);</span>
+<span class="linenos">19</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">skill</span><span class="p">.</span><span class="n">getType</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">SkillType</span><span class="o">::</span><span class="n">HEAL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">20</span><span class="w">        </span><span class="n">heal</span><span class="p">(</span><span class="n">skill</span><span class="p">.</span><span class="n">getPower</span><span class="p">());</span>
+<span class="linenos">21</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">22</span><span class="p">}</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="kt">void</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">heal</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">hp</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<span class="linenos">26</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maxHp</span><span class="p">)</span><span class="w"> </span><span class="n">hp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxHp</span><span class="p">;</span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; recovered &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; HP!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">28</span><span class="p">}</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="kt">void</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">recoverMp</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">31</span><span class="w">    </span><span class="n">mp</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<span class="linenos">32</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mp</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">maxMp</span><span class="p">)</span><span class="w"> </span><span class="n">mp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">maxMp</span><span class="p">;</span>
+<span class="linenos">33</span><span class="p">}</span>
+<span class="linenos">34</span>
+<span class="linenos">35</span><span class="kt">bool</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">payMp</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">36</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">mp</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">amount</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">37</span><span class="w">        </span><span class="n">mp</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span>
+<span class="linenos">38</span><span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="linenos">39</span><span class="w">    </span><span class="p">}</span>
+<span class="linenos">40</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nb">false</span><span class="p">;</span>
+<span class="linenos">41</span><span class="p">}</span>
+<span class="linenos">42</span>
+<span class="linenos">43</span><span class="kt">int</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">getMp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">44</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">mp</span><span class="p">;</span>
+<span class="linenos">45</span><span class="p">}</span>
+<span class="linenos">46</span>
+<span class="linenos">47</span><span class="kt">int</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">getMaxMp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">48</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">maxMp</span><span class="p">;</span>
+<span class="linenos">49</span><span class="p">}</span>
+<span class="linenos">50</span>
+<span class="linenos">51</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Skill</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">getSkills</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">52</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">skills</span><span class="p">;</span>
+<span class="linenos">53</span><span class="p">}</span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="kt">void</span><span class="w"> </span><span class="n">Hero</span><span class="o">::</span><span class="n">addSkill</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Skill</span><span class="o">&amp;</span><span class="w"> </span><span class="n">skill</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">56</span><span class="w">    </span><span class="n">skills</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">skill</span><span class="p">);</span>
+<span class="linenos">57</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Sphinx Tutorial</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>ナビゲーション</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/index.html">仕様書</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dice.html">Dice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameManager.html">GameManager</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Hero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Monster.html">Monster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Skill.html">Skill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">Sphinx Tutorial documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../api_reference.html">API Reference</a><ul>
+      <li>Previous: <a href="GameManager.html" title="前の章へ">GameManager</a></li>
+      <li>Next: <a href="Monster.html" title="次の章へ">Monster</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Ryota Amano.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/Hero.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

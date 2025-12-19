@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classDice" kind="class" language="C++" prot="public">
+    <compoundname>Dice</compoundname>
+    <includes refid="Dice_8h" local="no">Dice.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classDice_1a2803ef3c9835a2b3e86db13ba44afcc3" prot="private" static="yes" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 Dice::mt</definition>
+        <argsstring></argsstring>
+        <name>mt</name>
+        <briefdescription>
+<para>Mersenne Twister random number generator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Dice.h" line="30" column="25" bodyfile="include/utils/Dice.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classDice_1a70417322eb1e60eabe99833a58c11946" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dice::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+<para>Initializes the random number generator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Should be called once at the beginning of the program. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Dice.h" line="18" column="17" bodyfile="src/utils/Dice.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classDice_1ae630a3652a5bce7c8ffc275afa32dd39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Dice::get</definition>
+        <argsstring>(int min, int max)</argsstring>
+        <name>get</name>
+        <param>
+          <type>int</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Generates a random integer within a specified range. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum value (inclusive). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum value (inclusive). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A random integer between min and max. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Dice.h" line="27" column="16" bodyfile="src/utils/Dice.cpp" bodystart="11" bodyend="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility class for random number generation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Uses the Mersenne Twister engine for high-quality random numbers. </para>
+    </detaileddescription>
+    <location file="include/utils/Dice.h" line="11" column="1" bodyfile="include/utils/Dice.h" bodystart="11" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classDice_1ae630a3652a5bce7c8ffc275afa32dd39" prot="public" virt="non-virtual"><scope>Dice</scope><name>get</name></member>
+      <member refid="classDice_1a70417322eb1e60eabe99833a58c11946" prot="public" virt="non-virtual"><scope>Dice</scope><name>init</name></member>
+      <member refid="classDice_1a2803ef3c9835a2b3e86db13ba44afcc3" prot="private" virt="non-virtual"><scope>Dice</scope><name>mt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

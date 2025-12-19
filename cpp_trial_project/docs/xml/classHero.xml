@@ -1,0 +1,411 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classHero" kind="class" language="C++" prot="public">
+    <compoundname>Hero</compoundname>
+    <basecompoundref refid="classCharacter" prot="public" virt="non-virtual">Character</basecompoundref>
+    <includes refid="Hero_8h" local="no">Hero.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classHero_1ad06b9f69f67002823aa52e96b4e087b5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Hero::mp</definition>
+        <argsstring></argsstring>
+        <name>mp</name>
+        <briefdescription>
+<para>Current Magic Points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="90" column="9" bodyfile="include/models/Hero.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHero_1a49ca09652b2e3c1a07c94bf863870279" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Hero::maxMp</definition>
+        <argsstring></argsstring>
+        <name>maxMp</name>
+        <briefdescription>
+<para>Maximum Magic Points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="91" column="9" bodyfile="include/models/Hero.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classHero_1a154e14b318c5460a8252cb92fe6d8c8a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classSkill" kindref="compound">Skill</ref> &gt;</type>
+        <definition>std::vector&lt;Skill&gt; Hero::skills</definition>
+        <argsstring></argsstring>
+        <name>skills</name>
+        <briefdescription>
+<para>List of learned skills. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="92" column="17" bodyfile="include/models/Hero.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Hero::Hero</definition>
+        <argsstring>(std::string name, int hp, int attackPower, int mp)</argsstring>
+        <name>Hero</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>attackPower</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mp</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classHero" kindref="compound">Hero</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the hero. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial HP. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attackPower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base attack power. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial MP. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="23" column="5" bodyfile="src/models/Hero.cpp" bodystart="5" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Hero::attack</definition>
+        <argsstring>(Character &amp;target) override</argsstring>
+        <name>attack</name>
+        <reimplements refid="classCharacter_1ae785f187fe5c904f7e4b4984b3837739">attack</reimplements>
+        <param>
+          <type><ref refid="classCharacter" kindref="compound">Character</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Attacks a target character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Overrides the base attack method to include critical hit logic or other hero-specific mechanics.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to attack. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="32" column="10" bodyfile="src/models/Hero.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1af426591c0d9b7f102884660cf9678080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hero::useSkill</definition>
+        <argsstring>(const Skill &amp;skill, Character &amp;target)</argsstring>
+        <name>useSkill</name>
+        <param>
+          <type>const <ref refid="classSkill" kindref="compound">Skill</ref> &amp;</type>
+          <declname>skill</declname>
+        </param>
+        <param>
+          <type><ref refid="classCharacter" kindref="compound">Character</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Uses a skill on a target. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill to use. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The target of the skill. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="40" column="10" bodyfile="src/models/Hero.cpp" bodystart="14" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1a4e8d632441460ab9d32d18bb29398e31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hero::heal</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>heal</name>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Heals the hero by a specified amount. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of HP to recover. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="47" column="10" bodyfile="src/models/Hero.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1afea6f58323b192d8c7ccaad277f1f0fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hero::recoverMp</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>recoverMp</name>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Recovers MP by a specified amount. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of MP to recover. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="54" column="10" bodyfile="src/models/Hero.cpp" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Hero::payMp</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>payMp</name>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+<para>Attempts to pay a specified amount of MP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>amount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of MP to spend. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if MP was sufficient and spent, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="62" column="10" bodyfile="src/models/Hero.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1ab01d0a40cef1d2b44d7ef78dce382961" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Hero::getMp</definition>
+        <argsstring>() const</argsstring>
+        <name>getMp</name>
+        <briefdescription>
+<para>Gets the current MP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current MP. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="68" column="9" bodyfile="src/models/Hero.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1a5a6436c479ab877abad79c542a0c955f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Hero::getMaxMp</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxMp</name>
+        <briefdescription>
+<para>Gets the maximum MP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maximum MP. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="74" column="9" bodyfile="src/models/Hero.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1a502b535135a1c39c4593974c169e1840" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::vector&lt; <ref refid="classSkill" kindref="compound">Skill</ref> &gt; &amp;</type>
+        <definition>const std::vector&lt; Skill &gt; &amp; Hero::getSkills</definition>
+        <argsstring>() const</argsstring>
+        <name>getSkills</name>
+        <briefdescription>
+<para>Gets the list of skills learned by the hero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A constant reference to the vector of skills. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="80" column="23" bodyfile="src/models/Hero.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classHero_1af895fd6d4562457ea523ec695ad75f61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Hero::addSkill</definition>
+        <argsstring>(const Skill &amp;skill)</argsstring>
+        <name>addSkill</name>
+        <param>
+          <type>const <ref refid="classSkill" kindref="compound">Skill</ref> &amp;</type>
+          <declname>skill</declname>
+        </param>
+        <briefdescription>
+<para>Adds a skill to the hero&apos;s repertoire. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill to learn. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Hero.h" line="87" column="10" bodyfile="src/models/Hero.cpp" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents the player&apos;s character (<ref refid="classHero" kindref="compound">Hero</ref>). </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Inherits from <ref refid="classCharacter" kindref="compound">Character</ref> and adds mana points (MP) and skill capabilities. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Character</label>
+        <link refid="classCharacter"/>
+      </node>
+      <node id="1">
+        <label>Hero</label>
+        <link refid="classHero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Character</label>
+        <link refid="classCharacter"/>
+      </node>
+      <node id="1">
+        <label>Hero</label>
+        <link refid="classHero"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/models/Hero.h" line="13" column="1" bodyfile="include/models/Hero.h" bodystart="13" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classHero_1af895fd6d4562457ea523ec695ad75f61" prot="public" virt="non-virtual"><scope>Hero</scope><name>addSkill</name></member>
+      <member refid="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f" prot="public" virt="virtual"><scope>Hero</scope><name>attack</name></member>
+      <member refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" prot="protected" virt="non-virtual"><scope>Hero</scope><name>attackPower</name></member>
+      <member refid="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" prot="public" virt="non-virtual"><scope>Hero</scope><name>Character</name></member>
+      <member refid="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" prot="public" virt="non-virtual"><scope>Hero</scope><name>getAttackPower</name></member>
+      <member refid="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" prot="public" virt="non-virtual"><scope>Hero</scope><name>getHp</name></member>
+      <member refid="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" prot="public" virt="non-virtual"><scope>Hero</scope><name>getMaxHp</name></member>
+      <member refid="classHero_1a5a6436c479ab877abad79c542a0c955f" prot="public" virt="non-virtual"><scope>Hero</scope><name>getMaxMp</name></member>
+      <member refid="classHero_1ab01d0a40cef1d2b44d7ef78dce382961" prot="public" virt="non-virtual"><scope>Hero</scope><name>getMp</name></member>
+      <member refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" prot="public" virt="non-virtual"><scope>Hero</scope><name>getName</name></member>
+      <member refid="classHero_1a502b535135a1c39c4593974c169e1840" prot="public" virt="non-virtual"><scope>Hero</scope><name>getSkills</name></member>
+      <member refid="classHero_1a4e8d632441460ab9d32d18bb29398e31" prot="public" virt="non-virtual"><scope>Hero</scope><name>heal</name></member>
+      <member refid="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9" prot="public" virt="non-virtual"><scope>Hero</scope><name>Hero</name></member>
+      <member refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" prot="protected" virt="non-virtual"><scope>Hero</scope><name>hp</name></member>
+      <member refid="classCharacter_1a6581a9a16111768ae65603d060fca9d7" prot="public" virt="non-virtual"><scope>Hero</scope><name>isDead</name></member>
+      <member refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" prot="protected" virt="non-virtual"><scope>Hero</scope><name>maxHp</name></member>
+      <member refid="classHero_1a49ca09652b2e3c1a07c94bf863870279" prot="private" virt="non-virtual"><scope>Hero</scope><name>maxMp</name></member>
+      <member refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" prot="private" virt="non-virtual"><scope>Hero</scope><name>mp</name></member>
+      <member refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" prot="protected" virt="non-virtual"><scope>Hero</scope><name>name</name></member>
+      <member refid="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6" prot="public" virt="non-virtual"><scope>Hero</scope><name>payMp</name></member>
+      <member refid="classHero_1afea6f58323b192d8c7ccaad277f1f0fa" prot="public" virt="non-virtual"><scope>Hero</scope><name>recoverMp</name></member>
+      <member refid="classHero_1a154e14b318c5460a8252cb92fe6d8c8a" prot="private" virt="non-virtual"><scope>Hero</scope><name>skills</name></member>
+      <member refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" prot="public" virt="virtual"><scope>Hero</scope><name>takeDamage</name></member>
+      <member refid="classHero_1af426591c0d9b7f102884660cf9678080" prot="public" virt="non-virtual"><scope>Hero</scope><name>useSkill</name></member>
+      <member refid="classCharacter_1a3333a88ae593c36b229c90371e935d42" prot="public" virt="virtual"><scope>Hero</scope><name>~Character</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

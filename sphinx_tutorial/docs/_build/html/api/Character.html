@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Character &#8212; Sphinx Tutorial 0.1 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=be13464f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="Dice" href="Dice.html" />
+    <link rel="prev" title="API Reference" href="../api_reference.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="character">
+<h1>Character<a class="headerlink" href="#character" title="Link to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv49Character">
+<span id="_CPPv39Character"></span><span id="_CPPv29Character"></span><span id="Character"></span><span class="target" id="classCharacter"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Character</span></span></span><a class="headerlink" href="#_CPPv49Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Abstract base class for all characters in the game. </p>
+<p>Defines common attributes like name, HP, and attack power, as well as common behaviors like taking damage. </p>
+<p>Subclassed by <a class="reference internal" href="Hero.html#classHero"><span class="std std-ref">Hero</span></a>, <a class="reference internal" href="Monster.html#classMonster"><span class="std std-ref">Monster</span></a></p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Character9CharacterENSt6stringEii">
+<span id="_CPPv3N9Character9CharacterENSt6stringEii"></span><span id="_CPPv2N9Character9CharacterENSt6stringEii"></span><span id="Character::Character__ss.i.i"></span><span class="target" id="classCharacter_1a032a36e9ceb12d9b8f8345310643a637"></span><span class="sig-name descname"><span class="n"><span class="pre">Character</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hp</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">attackPower</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Character9CharacterENSt6stringEii" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Constructor for <a class="reference internal" href="#classCharacter"><span class="std std-ref">Character</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> -- The name of the character. </p></li>
+<li><p><strong>hp</strong> -- The initial (and maximum) hit points. </p></li>
+<li><p><strong>attackPower</strong> -- The base attack power. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9CharacterD0Ev">
+<span id="_CPPv3N9CharacterD0Ev"></span><span id="_CPPv2N9CharacterD0Ev"></span><span id="Character::~Character"></span><span class="target" id="classCharacter_1a3333a88ae593c36b229c90371e935d42"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">~Character</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="k"><span class="pre">default</span></span><a class="headerlink" href="#_CPPv4N9CharacterD0Ev" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Virtual destructor. </p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Character6attackER9Character">
+<span id="_CPPv3N9Character6attackER9Character"></span><span id="_CPPv2N9Character6attackER9Character"></span><span id="Character::attack__CharacterR"></span><span class="target" id="classCharacter_1ae785f187fe5c904f7e4b4984b3837739"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">attack</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="m"><span class="pre">0</span></span><a class="headerlink" href="#_CPPv4N9Character6attackER9Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Pure virtual function for attacking a target. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target</strong> -- The character to attack. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N9Character10takeDamageEi">
+<span id="_CPPv3N9Character10takeDamageEi"></span><span id="_CPPv2N9Character10takeDamageEi"></span><span id="Character::takeDamage__i"></span><span class="target" id="classCharacter_1a5b06cc242690c9af1610c33e895348e2"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">takeDamage</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">damage</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N9Character10takeDamageEi" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Inflicts damage on the character. </p>
+<p>Reduces HP by the specified amount. HP will not drop below 0.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>damage</strong> -- The amount of damage to take. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Character6isDeadEv">
+<span id="_CPPv3NK9Character6isDeadEv"></span><span id="_CPPv2NK9Character6isDeadEv"></span><span id="Character::isDeadC"></span><span class="target" id="classCharacter_1a6581a9a16111768ae65603d060fca9d7"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">isDead</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Character6isDeadEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Checks if the character is dead. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>true if HP is 0 or less, false otherwise. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Character7getNameEv">
+<span id="_CPPv3NK9Character7getNameEv"></span><span id="_CPPv2NK9Character7getNameEv"></span><span id="Character::getNameC"></span><span class="target" id="classCharacter_1ad79f892fe576c7ef0804cad502d94517"></span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getName</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Character7getNameEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the character's name. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The name of the character. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Character5getHpEv">
+<span id="_CPPv3NK9Character5getHpEv"></span><span id="_CPPv2NK9Character5getHpEv"></span><span id="Character::getHpC"></span><span class="target" id="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getHp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Character5getHpEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the current HP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The current hit points. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Character8getMaxHpEv">
+<span id="_CPPv3NK9Character8getMaxHpEv"></span><span id="_CPPv2NK9Character8getMaxHpEv"></span><span id="Character::getMaxHpC"></span><span class="target" id="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getMaxHp</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Character8getMaxHpEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the maximum HP. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The maximum hit points. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4NK9Character14getAttackPowerEv">
+<span id="_CPPv3NK9Character14getAttackPowerEv"></span><span id="_CPPv2NK9Character14getAttackPowerEv"></span><span id="Character::getAttackPowerC"></span><span class="target" id="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">getAttackPower</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">const</span></span><a class="headerlink" href="#_CPPv4NK9Character14getAttackPowerEv" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Gets the attack power. </p>
+<dl class="field-list simple">
+<dt class="field-odd">戻り値<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The attack power. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<p><strong>Source Code</strong></p>
+<p>Header (<code class="docutils literal notranslate"><span class="pre">include/models/Character.h</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#ifndef CHARACTER_H</span>
+<span class="linenos"> 2</span><span class="cp">#define CHARACTER_H</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;string&gt;</span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cm">/**</span>
+<span class="linenos"> 8</span><span class="cm"> * @brief Abstract base class for all characters in the game.</span>
+<span class="linenos"> 9</span><span class="cm"> *</span>
+<span class="linenos">10</span><span class="cm"> * Defines common attributes like name, HP, and attack power,</span>
+<span class="linenos">11</span><span class="cm"> * as well as common behaviors like taking damage.</span>
+<span class="linenos">12</span><span class="cm"> */</span>
+<span class="linenos">13</span><span class="k">class</span><span class="w"> </span><span class="nc">Character</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">14</span><span class="k">public</span><span class="o">:</span>
+<span class="linenos">15</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">16</span><span class="cm">     * @brief Constructor for Character.</span>
+<span class="linenos">17</span><span class="cm">     *</span>
+<span class="linenos">18</span><span class="cm">     * @param name The name of the character.</span>
+<span class="linenos">19</span><span class="cm">     * @param hp The initial (and maximum) hit points.</span>
+<span class="linenos">20</span><span class="cm">     * @param attackPower The base attack power.</span>
+<span class="linenos">21</span><span class="cm">     */</span>
+<span class="linenos">22</span><span class="w">    </span><span class="n">Character</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">);</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">25</span><span class="cm">     * @brief Virtual destructor.</span>
+<span class="linenos">26</span><span class="cm">     */</span>
+<span class="linenos">27</span><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">Character</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">30</span><span class="cm">     * @brief Pure virtual function for attacking a target.</span>
+<span class="linenos">31</span><span class="cm">     *</span>
+<span class="linenos">32</span><span class="cm">     * @param target The character to attack.</span>
+<span class="linenos">33</span><span class="cm">     */</span>
+<span class="linenos">34</span><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">attack</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">37</span><span class="cm">     * @brief Inflicts damage on the character.</span>
+<span class="linenos">38</span><span class="cm">     *</span>
+<span class="linenos">39</span><span class="cm">     * Reduces HP by the specified amount. HP will not drop below 0.</span>
+<span class="linenos">40</span><span class="cm">     *</span>
+<span class="linenos">41</span><span class="cm">     * @param damage The amount of damage to take.</span>
+<span class="linenos">42</span><span class="cm">     */</span>
+<span class="linenos">43</span><span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">takeDamage</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="p">);</span>
+<span class="linenos">44</span>
+<span class="linenos">45</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">46</span><span class="cm">     * @brief Checks if the character is dead.</span>
+<span class="linenos">47</span><span class="cm">     *</span>
+<span class="linenos">48</span><span class="cm">     * @return true if HP is 0 or less, false otherwise.</span>
+<span class="linenos">49</span><span class="cm">     */</span>
+<span class="linenos">50</span><span class="w">    </span><span class="kt">bool</span><span class="w"> </span><span class="nf">isDead</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">51</span>
+<span class="linenos">52</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">53</span><span class="cm">     * @brief Gets the character&#39;s name.</span>
+<span class="linenos">54</span><span class="cm">     * @return The name of the character.</span>
+<span class="linenos">55</span><span class="cm">     */</span>
+<span class="linenos">56</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="nf">getName</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">59</span><span class="cm">     * @brief Gets the current HP.</span>
+<span class="linenos">60</span><span class="cm">     * @return The current hit points.</span>
+<span class="linenos">61</span><span class="cm">     */</span>
+<span class="linenos">62</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getHp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">63</span>
+<span class="linenos">64</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">65</span><span class="cm">     * @brief Gets the maximum HP.</span>
+<span class="linenos">66</span><span class="cm">     * @return The maximum hit points.</span>
+<span class="linenos">67</span><span class="cm">     */</span>
+<span class="linenos">68</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getMaxHp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">69</span>
+<span class="linenos">70</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">71</span><span class="cm">     * @brief Gets the attack power.</span>
+<span class="linenos">72</span><span class="cm">     * @return The attack power.</span>
+<span class="linenos">73</span><span class="cm">     */</span>
+<span class="linenos">74</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="nf">getAttackPower</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="p">;</span>
+<span class="linenos">75</span>
+<span class="linenos">76</span><span class="k">protected</span><span class="o">:</span>
+<span class="linenos">77</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">;</span><span class="w"> </span><span class="c1">///&lt; The name of the character.</span>
+<span class="linenos">78</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">;</span><span class="w">           </span><span class="c1">///&lt; Current hit points.</span>
+<span class="linenos">79</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">maxHp</span><span class="p">;</span><span class="w">        </span><span class="c1">///&lt; Maximum hit points.</span>
+<span class="linenos">80</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">;</span><span class="w">  </span><span class="c1">///&lt; Base attack power.</span>
+<span class="linenos">81</span><span class="p">};</span>
+<span class="linenos">82</span>
+<span class="linenos">83</span><span class="cp">#endif </span><span class="c1">// CHARACTER_H</span>
+</pre></div>
+</div>
+<p>Implementation (<code class="docutils literal notranslate"><span class="pre">src/models/Character.cpp</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Character.h&quot;</span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="n">Character</span><span class="o">::</span><span class="n">Character</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">)</span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">name</span><span class="p">(</span><span class="n">name</span><span class="p">),</span><span class="w"> </span><span class="n">hp</span><span class="p">(</span><span class="n">hp</span><span class="p">),</span><span class="w"> </span><span class="n">maxHp</span><span class="p">(</span><span class="n">hp</span><span class="p">),</span><span class="w"> </span><span class="n">attackPower</span><span class="p">(</span><span class="n">attackPower</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kt">void</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">takeDamage</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="n">hp</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">damage</span><span class="p">;</span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">hp</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="n">hp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; took &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; damage!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">10</span><span class="p">}</span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="kt">bool</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">isDead</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">13</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">hp</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="linenos">14</span><span class="p">}</span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">17</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">name</span><span class="p">;</span>
+<span class="linenos">18</span><span class="p">}</span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="kt">int</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">getHp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">21</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">hp</span><span class="p">;</span>
+<span class="linenos">22</span><span class="p">}</span>
+<span class="linenos">23</span>
+<span class="linenos">24</span><span class="kt">int</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">getMaxHp</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">25</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">maxHp</span><span class="p">;</span>
+<span class="linenos">26</span><span class="p">}</span>
+<span class="linenos">27</span>
+<span class="linenos">28</span><span class="kt">int</span><span class="w"> </span><span class="n">Character</span><span class="o">::</span><span class="n">getAttackPower</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">29</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">attackPower</span><span class="p">;</span>
+<span class="linenos">30</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Sphinx Tutorial</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>ナビゲーション</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/index.html">仕様書</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dice.html">Dice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameManager.html">GameManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Hero.html">Hero</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Monster.html">Monster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Skill.html">Skill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">Sphinx Tutorial documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../api_reference.html">API Reference</a><ul>
+      <li>Previous: <a href="../api_reference.html" title="前の章へ">API Reference</a></li>
+      <li>Next: <a href="Dice.html" title="次の章へ">Dice</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Ryota Amano.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/Character.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

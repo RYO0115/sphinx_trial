@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Monster_8cpp" kind="file" language="C++">
+    <compoundname>Monster.cpp</compoundname>
+    <includes refid="Monster_8h" local="yes">models/Monster.h</includes>
+    <includes refid="Dice_8h" local="yes">utils/Dice.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/models/Monster.cpp</label>
+        <link refid="Monster_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models/Monster.h</label>
+        <link refid="Monster_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>random</label>
+      </node>
+      <node id="6">
+        <label>utils/Dice.h</label>
+        <link refid="Dice_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>models/Character.h</label>
+        <link refid="Character_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Monster_8h" kindref="compound">models/Monster.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dice_8h" kindref="compound">utils/Dice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classMonster_1a4c512f4803f7722f928aa17b2b9b01d3" refkind="member"><highlight class="normal"><ref refid="classMonster_1a4c512f4803f7722f928aa17b2b9b01d3" kindref="member">Monster::Monster</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attackPower)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classCharacter" kindref="compound">Character</ref>(name,<sp/>hp,<sp/>attackPower)<sp/>{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb" kindref="member">Monster::attack</ref>(<ref refid="classCharacter" kindref="compound">Character</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage<sp/>=<sp/><ref refid="classDice_1ae630a3652a5bce7c8ffc275afa32dd39" kindref="member">Dice::get</ref>(<ref refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kindref="member">attackPower</ref><sp/>-<sp/>2,<sp/><ref refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kindref="member">attackPower</ref><sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>attacks<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>target.<ref refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" kindref="member">takeDamage</ref>(damage);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classMonster_1ab5aaac282b637d56c4d3d3a3f3815c41" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMonster_1ab5aaac282b637d56c4d3d3a3f3815c41" kindref="member">Monster::performAction</ref>(<ref refid="classCharacter" kindref="compound">Character</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Simple<sp/>AI:<sp/>20%<sp/>chance<sp/>to<sp/>do<sp/>a<sp/>strong<sp/>attack<sp/>(if<sp/>we<sp/>had<sp/>skills),<sp/>otherwise<sp/>normal<sp/>attack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>now,<sp/>just<sp/>attack</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb" kindref="member">attack</ref>(target);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/models/Monster.cpp"/>
+  </compounddef>
+</doxygen>

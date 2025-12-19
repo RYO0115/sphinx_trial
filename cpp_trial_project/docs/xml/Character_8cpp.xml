@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Character_8cpp" kind="file" language="C++">
+    <compoundname>Character.cpp</compoundname>
+    <includes refid="Character_8h" local="yes">models/Character.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/models/Character.cpp</label>
+        <link refid="Character_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="2">
+        <label>models/Character.h</label>
+        <link refid="Character_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Character_8h" kindref="compound">models/Character.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" refkind="member"><highlight class="normal"><ref refid="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" kindref="member">Character::Character</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attackPower)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>name(name),<sp/>hp(hp),<sp/>maxHp(hp),<sp/>attackPower(attackPower)<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" kindref="member">Character::takeDamage</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage)<sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>-=<sp/>damage;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>&lt;<sp/>0)<sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>took<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>damage<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>damage!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classCharacter_1a6581a9a16111768ae65603d060fca9d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a6581a9a16111768ae65603d060fca9d7" kindref="member">Character::isDead</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>&lt;=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" kindref="member">Character::getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" kindref="member">Character::getHp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" kindref="member">Character::getMaxHp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" kindref="member">maxHp</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" kindref="member">Character::getAttackPower</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kindref="member">attackPower</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/models/Character.cpp"/>
+  </compounddef>
+</doxygen>

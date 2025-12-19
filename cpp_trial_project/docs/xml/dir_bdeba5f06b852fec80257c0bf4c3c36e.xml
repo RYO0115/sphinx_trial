@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_bdeba5f06b852fec80257c0bf4c3c36e" kind="dir">
+    <compoundname>src/models</compoundname>
+    <innerfile refid="Character_8cpp">Character.cpp</innerfile>
+    <innerfile refid="Hero_8cpp">Hero.cpp</innerfile>
+    <innerfile refid="Monster_8cpp">Monster.cpp</innerfile>
+    <innerfile refid="Skill_8cpp">Skill.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/models/"/>
+  </compounddef>
+</doxygen>

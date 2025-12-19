@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classSkill" kind="class" language="C++" prot="public">
+    <compoundname>Skill</compoundname>
+    <includes refid="Skill_8h" local="no">Skill.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classSkill_1a1271744546e69259d6ac31013900c49e" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Skill::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="56" column="17" bodyfile="include/models/Skill.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Skill::mpCost</definition>
+        <argsstring></argsstring>
+        <name>mpCost</name>
+        <briefdescription>
+<para>The MP cost required to use the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="57" column="9" bodyfile="include/models/Skill.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSkill_1ada72ab52bf0c12055497ce64100e82bc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Skill::power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <briefdescription>
+<para>The power of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="58" column="9" bodyfile="include/models/Skill.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classSkill_1a8deae6639996545a133cf1b17d082425" prot="private" static="no" mutable="no">
+        <type><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref></type>
+        <definition>SkillType Skill::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>The type of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="59" column="15" bodyfile="include/models/Skill.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classSkill_1ac647fa947e889de5019dd2735c7b420c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Skill::Skill</definition>
+        <argsstring>(std::string name, int mpCost, int power, SkillType type)</argsstring>
+        <name>Skill</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mpCost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>power</declname>
+        </param>
+        <param>
+          <type><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classSkill" kindref="compound">Skill</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the skill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mpCost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MP cost to use the skill. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>power</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The power of the skill (damage or healing amount). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the skill (ATTACK or HEAL). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="29" column="5" bodyfile="src/models/Skill.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classSkill_1ab5876402c7153dedc92feb4143c21b35" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Skill::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Gets the name of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The skill name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="35" column="17" bodyfile="src/models/Skill.cpp" bodystart="6" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classSkill_1a992060b5dd051b5de10fa2a8434a9616" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Skill::getMpCost</definition>
+        <argsstring>() const</argsstring>
+        <name>getMpCost</name>
+        <briefdescription>
+<para>Gets the MP cost of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The MP cost. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="41" column="9" bodyfile="src/models/Skill.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Skill::getPower</definition>
+        <argsstring>() const</argsstring>
+        <name>getPower</name>
+        <briefdescription>
+<para>Gets the power of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The power value. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="47" column="9" bodyfile="src/models/Skill.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref></type>
+        <definition>SkillType Skill::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+<para>Gets the type of the skill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The skill type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="53" column="15" bodyfile="src/models/Skill.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Represents a skill or ability. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A skill has a name, MP cost, power (damage or heal amount), and a type. </para>
+    </detaileddescription>
+    <location file="include/models/Skill.h" line="19" column="1" bodyfile="include/models/Skill.h" bodystart="19" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classSkill_1a992060b5dd051b5de10fa2a8434a9616" prot="public" virt="non-virtual"><scope>Skill</scope><name>getMpCost</name></member>
+      <member refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" prot="public" virt="non-virtual"><scope>Skill</scope><name>getName</name></member>
+      <member refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" prot="public" virt="non-virtual"><scope>Skill</scope><name>getPower</name></member>
+      <member refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" prot="public" virt="non-virtual"><scope>Skill</scope><name>getType</name></member>
+      <member refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" prot="private" virt="non-virtual"><scope>Skill</scope><name>mpCost</name></member>
+      <member refid="classSkill_1a1271744546e69259d6ac31013900c49e" prot="private" virt="non-virtual"><scope>Skill</scope><name>name</name></member>
+      <member refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" prot="private" virt="non-virtual"><scope>Skill</scope><name>power</name></member>
+      <member refid="classSkill_1ac647fa947e889de5019dd2735c7b420c" prot="public" virt="non-virtual"><scope>Skill</scope><name>Skill</name></member>
+      <member refid="classSkill_1a8deae6639996545a133cf1b17d082425" prot="private" virt="non-virtual"><scope>Skill</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

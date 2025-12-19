@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Hero_8cpp" kind="file" language="C++">
+    <compoundname>Hero.cpp</compoundname>
+    <includes refid="Hero_8h" local="yes">models/Hero.h</includes>
+    <includes refid="Dice_8h" local="yes">utils/Dice.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>models/Hero.h</label>
+        <link refid="Hero_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="9">
+        <label>random</label>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="1">
+        <label>src/models/Hero.cpp</label>
+        <link refid="Hero_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>utils/Dice.h</label>
+        <link refid="Dice_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>models/Character.h</label>
+        <link refid="Character_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>models/Skill.h</label>
+        <link refid="Skill_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Hero_8h" kindref="compound">models/Hero.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dice_8h" kindref="compound">utils/Dice.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9" refkind="member"><highlight class="normal"><ref refid="classHero_1ad21b5b8a5e3a10c659fc0b1b53a149e9" kindref="member">Hero::Hero</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hp,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attackPower,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mp)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="classCharacter" kindref="compound">Character</ref>(name,<sp/>hp,<sp/>attackPower),<sp/>mp(mp),<sp/>maxMp(mp)<sp/>{}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f" kindref="member">Hero::attack</ref>(<ref refid="classCharacter" kindref="compound">Character</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage<sp/>=<sp/><ref refid="classDice_1ae630a3652a5bce7c8ffc275afa32dd39" kindref="member">Dice::get</ref>(<ref refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kindref="member">attackPower</ref><sp/>-<sp/>2,<sp/><ref refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" kindref="member">attackPower</ref><sp/>+<sp/>2);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>attacks<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>target.<ref refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>target.<ref refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" kindref="member">takeDamage</ref>(damage);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classHero_1af426591c0d9b7f102884660cf9678080" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHero_1af426591c0d9b7f102884660cf9678080" kindref="member">Hero::useSkill</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSkill" kindref="compound">Skill</ref>&amp;<sp/>skill,<sp/><ref refid="classCharacter" kindref="compound">Character</ref>&amp;<sp/>target)<sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>uses<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>skill.<ref refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" kindref="member">getName</ref>()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(skill.<ref refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" kindref="member">getType</ref>()<sp/>==<sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234ac6ddd0f72ff2fd344693b9ca8d483871" kindref="member">SkillType::ATTACK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>damage<sp/>=<sp/>skill.<ref refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" kindref="member">getPower</ref>();<sp/></highlight><highlight class="comment">//<sp/>Fixed<sp/>damage<sp/>for<sp/>simplicity,<sp/>or<sp/>could<sp/>use<sp/>Dice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>target.<ref refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" kindref="member">takeDamage</ref>(damage);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(skill.<ref refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" kindref="member">getType</ref>()<sp/>==<sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234a3a25f1406daa84785c1291a745018fae" kindref="member">SkillType::HEAL</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHero_1a4e8d632441460ab9d32d18bb29398e31" kindref="member">heal</ref>(skill.<ref refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" kindref="member">getPower</ref>());</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classHero_1a4e8d632441460ab9d32d18bb29398e31" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHero_1a4e8d632441460ab9d32d18bb29398e31" kindref="member">Hero::heal</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>+=<sp/>amount;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>&gt;<sp/><ref refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" kindref="member">maxHp</ref>)<sp/><ref refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" kindref="member">hp</ref><sp/>=<sp/><ref refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" kindref="member">maxHp</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/><ref refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" kindref="member">name</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>recovered<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>amount<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>HP!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classHero_1afea6f58323b192d8c7ccaad277f1f0fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHero_1afea6f58323b192d8c7ccaad277f1f0fa" kindref="member">Hero::recoverMp</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref><sp/>+=<sp/>amount;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref><sp/>&gt;<sp/><ref refid="classHero_1a49ca09652b2e3c1a07c94bf863870279" kindref="member">maxMp</ref>)<sp/><ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref><sp/>=<sp/><ref refid="classHero_1a49ca09652b2e3c1a07c94bf863870279" kindref="member">maxMp</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classHero_1a5e4eb099949c5d118d7fca883fe3c7a6" kindref="member">Hero::payMp</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref><sp/>&gt;=<sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref><sp/>-=<sp/>amount;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classHero_1ab01d0a40cef1d2b44d7ef78dce382961" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classHero_1ab01d0a40cef1d2b44d7ef78dce382961" kindref="member">Hero::getMp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classHero_1ad06b9f69f67002823aa52e96b4e087b5" kindref="member">mp</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classHero_1a5a6436c479ab877abad79c542a0c955f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classHero_1a5a6436c479ab877abad79c542a0c955f" kindref="member">Hero::getMaxMp</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classHero_1a49ca09652b2e3c1a07c94bf863870279" kindref="member">maxMp</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classHero_1a502b535135a1c39c4593974c169e1840" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;Skill&gt;&amp;<sp/><ref refid="classHero_1a502b535135a1c39c4593974c169e1840" kindref="member">Hero::getSkills</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classHero_1a154e14b318c5460a8252cb92fe6d8c8a" kindref="member">skills</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classHero_1af895fd6d4562457ea523ec695ad75f61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classHero_1af895fd6d4562457ea523ec695ad75f61" kindref="member">Hero::addSkill</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSkill" kindref="compound">Skill</ref>&amp;<sp/>skill)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classHero_1a154e14b318c5460a8252cb92fe6d8c8a" kindref="member">skills</ref>.push_back(skill);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/models/Hero.cpp"/>
+  </compounddef>
+</doxygen>

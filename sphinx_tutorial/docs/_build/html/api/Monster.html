@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Monster &#8212; Sphinx Tutorial 0.1 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=be13464f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=4755f45a"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="Skill" href="Skill.html" />
+    <link rel="prev" title="Hero" href="Hero.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="monster">
+<h1>Monster<a class="headerlink" href="#monster" title="Link to this heading">¶</a></h1>
+<dl class="cpp class">
+<dt class="sig sig-object cpp" id="_CPPv47Monster">
+<span id="_CPPv37Monster"></span><span id="_CPPv27Monster"></span><span id="Monster"></span><span class="target" id="classMonster"></span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Monster</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="k"><span class="pre">public</span></span><span class="w"> </span><a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><a class="headerlink" href="#_CPPv47Monster" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Represents an enemy character (<a class="reference internal" href="#classMonster"><span class="std std-ref">Monster</span></a>). </p>
+<p>Inherits from <a class="reference internal" href="Character.html#classCharacter"><span class="std std-ref">Character</span></a> and includes AI logic for battle actions. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-functions">Public Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Monster7MonsterENSt6stringEii">
+<span id="_CPPv3N7Monster7MonsterENSt6stringEii"></span><span id="_CPPv2N7Monster7MonsterENSt6stringEii"></span><span id="Monster::Monster__ss.i.i"></span><span class="target" id="classMonster_1a4c512f4803f7722f928aa17b2b9b01d3"></span><span class="sig-name descname"><span class="n"><span class="pre">Monster</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">string</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">name</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">hp</span></span>, <span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="n sig-param"><span class="pre">attackPower</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Monster7MonsterENSt6stringEii" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Constructor for <a class="reference internal" href="#classMonster"><span class="std std-ref">Monster</span></a>. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> -- The name of the monster. </p></li>
+<li><p><strong>hp</strong> -- The initial HP. </p></li>
+<li><p><strong>attackPower</strong> -- The base attack power. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Monster6attackER9Character">
+<span id="_CPPv3N7Monster6attackER9Character"></span><span id="_CPPv2N7Monster6attackER9Character"></span><span id="Monster::attack__CharacterR"></span><span class="target" id="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb"></span><span class="k"><span class="pre">virtual</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">attack</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><span class="w"> </span><span class="k"><span class="pre">override</span></span><a class="headerlink" href="#_CPPv4N7Monster6attackER9Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Attacks a target character. </p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target</strong> -- The character to attack. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv4N7Monster13performActionER9Character">
+<span id="_CPPv3N7Monster13performActionER9Character"></span><span id="_CPPv2N7Monster13performActionER9Character"></span><span id="Monster::performAction__CharacterR"></span><span class="target" id="classMonster_1ab5aaac282b637d56c4d3d3a3f3815c41"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">performAction</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="Character.html#_CPPv49Character" title="Character"><span class="n"><span class="pre">Character</span></span></a><span class="w"> </span><span class="p"><span class="pre">&amp;</span></span><span class="n sig-param"><span class="pre">target</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N7Monster13performActionER9Character" title="Link to this definition">¶</a><br /></dt>
+<dd><p>Performs an action during the monster's turn. </p>
+<p>Decides whether to attack or perform other actions based on AI logic.</p>
+<dl class="field-list simple">
+<dt class="field-odd">パラメータ<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>target</strong> -- The target of the action (usually the <a class="reference internal" href="Hero.html#classHero"><span class="std std-ref">Hero</span></a>). </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+<p><strong>Source Code</strong></p>
+<p>Header (<code class="docutils literal notranslate"><span class="pre">include/models/Monster.h</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#ifndef MONSTER_H</span>
+<span class="linenos"> 2</span><span class="cp">#define MONSTER_H</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Character.h&quot;</span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="cm">/**</span>
+<span class="linenos"> 7</span><span class="cm"> * @brief Represents an enemy character (Monster).</span>
+<span class="linenos"> 8</span><span class="cm"> *</span>
+<span class="linenos"> 9</span><span class="cm"> * Inherits from Character and includes AI logic for battle actions.</span>
+<span class="linenos">10</span><span class="cm"> */</span>
+<span class="linenos">11</span><span class="k">class</span><span class="w"> </span><span class="nc">Monster</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Character</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">12</span><span class="k">public</span><span class="o">:</span>
+<span class="linenos">13</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">14</span><span class="cm">     * @brief Constructor for Monster.</span>
+<span class="linenos">15</span><span class="cm">     *</span>
+<span class="linenos">16</span><span class="cm">     * @param name The name of the monster.</span>
+<span class="linenos">17</span><span class="cm">     * @param hp The initial HP.</span>
+<span class="linenos">18</span><span class="cm">     * @param attackPower The base attack power.</span>
+<span class="linenos">19</span><span class="cm">     */</span>
+<span class="linenos">20</span><span class="w">    </span><span class="n">Monster</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">);</span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">23</span><span class="cm">     * @brief Attacks a target character.</span>
+<span class="linenos">24</span><span class="cm">     *</span>
+<span class="linenos">25</span><span class="cm">     * @param target The character to attack.</span>
+<span class="linenos">26</span><span class="cm">     */</span>
+<span class="linenos">27</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">attack</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">    </span><span class="cm">/**</span>
+<span class="linenos">30</span><span class="cm">     * @brief Performs an action during the monster&#39;s turn.</span>
+<span class="linenos">31</span><span class="cm">     *</span>
+<span class="linenos">32</span><span class="cm">     * Decides whether to attack or perform other actions based on AI logic.</span>
+<span class="linenos">33</span><span class="cm">     *</span>
+<span class="linenos">34</span><span class="cm">     * @param target The target of the action (usually the Hero).</span>
+<span class="linenos">35</span><span class="cm">     */</span>
+<span class="linenos">36</span><span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="nf">performAction</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">);</span>
+<span class="linenos">37</span><span class="p">};</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span><span class="cp">#endif </span><span class="c1">// MONSTER_H</span>
+</pre></div>
+</div>
+<p>Implementation (<code class="docutils literal notranslate"><span class="pre">src/models/Monster.cpp</span></code>):</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;models/Monster.h&quot;</span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;utils/Dice.h&quot;</span>
+<span class="linenos"> 3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;iostream&gt;</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="n">Monster</span><span class="o">::</span><span class="n">Monster</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">attackPower</span><span class="p">)</span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="o">:</span><span class="w"> </span><span class="n">Character</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">hp</span><span class="p">,</span><span class="w"> </span><span class="n">attackPower</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="kt">void</span><span class="w"> </span><span class="n">Monster</span><span class="o">::</span><span class="n">attack</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">damage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Dice</span><span class="o">::</span><span class="n">get</span><span class="p">(</span><span class="n">attackPower</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="n">attackPower</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span>
+<span class="linenos">10</span><span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; attacks &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">getName</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+<span class="linenos">11</span><span class="w">    </span><span class="n">target</span><span class="p">.</span><span class="n">takeDamage</span><span class="p">(</span><span class="n">damage</span><span class="p">);</span>
+<span class="linenos">12</span><span class="p">}</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="kt">void</span><span class="w"> </span><span class="n">Monster</span><span class="o">::</span><span class="n">performAction</span><span class="p">(</span><span class="n">Character</span><span class="o">&amp;</span><span class="w"> </span><span class="n">target</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="linenos">15</span><span class="w">    </span><span class="c1">// Simple AI: 20% chance to do a strong attack (if we had skills), otherwise normal attack</span>
+<span class="linenos">16</span><span class="w">    </span><span class="c1">// For now, just attack</span>
+<span class="linenos">17</span><span class="w">    </span><span class="n">attack</span><span class="p">(</span><span class="n">target</span><span class="p">);</span>
+<span class="linenos">18</span><span class="p">}</span>
+</pre></div>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">Sphinx Tutorial</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>ナビゲーション</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../specification/index.html">仕様書</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../api_reference.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Character.html">Character</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Dice.html">Dice</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GameManager.html">GameManager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Hero.html">Hero</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Monster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Skill.html">Skill</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../other/index.html">Sphinx Tutorial documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="../api_reference.html">API Reference</a><ul>
+      <li>Previous: <a href="Hero.html" title="前の章へ">Hero</a></li>
+      <li>Next: <a href="Skill.html" title="次の章へ">Skill</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Ryota Amano.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/api/Monster.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

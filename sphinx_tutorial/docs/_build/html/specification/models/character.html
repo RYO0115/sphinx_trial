@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="ja" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Character Class &#8212; Sphinx Tutorial 0.1 ドキュメント</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=27fed22d" />
+    <script src="../../_static/documentation_options.js?v=be13464f"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=4755f45a"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="検索" href="../../search.html" />
+    <link rel="next" title="Hero Class" href="hero.html" />
+    <link rel="prev" title="GameManager Class" href="../core/gamemanager.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="character-class">
+<h1>Character Class<a class="headerlink" href="#character-class" title="Link to this heading">¶</a></h1>
+<p><a class="reference internal" href="../../api/Character.html#_CPPv49Character" title="Character"><code class="xref cpp cpp-class docutils literal notranslate"><span class="pre">Character</span></code></a> クラスは、全てのキャラクター（ヒーロー、モンスター）の基底クラスです。</p>
+<section id="id1">
+<h2>概要<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>名前空間</strong>: <code class="docutils literal notranslate"><span class="pre">models</span></code></p></li>
+<li><p><strong>ヘッダファイル</strong>: <code class="docutils literal notranslate"><span class="pre">include/models/Character.h</span></code></p></li>
+<li><p><strong>ソースファイル</strong>: <code class="docutils literal notranslate"><span class="pre">src/models/Character.cpp</span></code></p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>責務<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>共通ステータス（名前、HP、攻撃力）の保持</p></li>
+<li><p>ダメージ処理の共通化</p></li>
+<li><p>死亡判定</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>メンバ変数<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<section id="protected">
+<h3><code class="docutils literal notranslate"><span class="pre">protected</span></code><a class="headerlink" href="#protected" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">std::string</span> <span class="pre">name</span></code>: キャラクターの名前</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">hp</span></code>: 現在のHP</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">maxHp</span></code>: 最大HP</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">int</span> <span class="pre">attackPower</span></code>: 攻撃力</p></li>
+</ul>
+</section>
+</section>
+<section id="id4">
+<h2>メンバ関数<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<section id="public">
+<h3><code class="docutils literal notranslate"><span class="pre">public</span></code><a class="headerlink" href="#public" title="Link to this heading">¶</a></h3>
+<section id="character-character">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4N9Character9CharacterENSt6stringEii" title="Character::Character"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::Character()</span></code></a><a class="headerlink" href="#character-character" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: コンストラクタ。ステータスを初期化します。</p></li>
+</ul>
+</section>
+<section id="character-attack">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4N9Character6attackER9Character" title="Character::attack"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::attack()</span></code></a><a class="headerlink" href="#character-attack" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: 純粋仮想関数。対象を攻撃します。派生クラスで実装する必要があります。</p></li>
+</ul>
+</section>
+<section id="character-takedamage">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4N9Character10takeDamageEi" title="Character::takeDamage"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::takeDamage()</span></code></a><a class="headerlink" href="#character-takedamage" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: ダメージを受けます。HPを減算し、0未満にならないようにします。</p></li>
+</ul>
+</section>
+<section id="character-isdead">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4NK9Character6isDeadEv" title="Character::isDead"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::isDead()</span></code></a><a class="headerlink" href="#character-isdead" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: キャラクターが死亡しているか（HP &lt;= 0）を判定します。</p></li>
+</ul>
+</section>
+<section id="character-getname">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4NK9Character7getNameEv" title="Character::getName"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::getName()</span></code></a><a class="headerlink" href="#character-getname" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: 名前を取得します。</p></li>
+</ul>
+</section>
+<section id="character-gethp">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4NK9Character5getHpEv" title="Character::getHp"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::getHp()</span></code></a><a class="headerlink" href="#character-gethp" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: 現在のHPを取得します。</p></li>
+</ul>
+</section>
+<section id="character-getmaxhp">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4NK9Character8getMaxHpEv" title="Character::getMaxHp"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::getMaxHp()</span></code></a><a class="headerlink" href="#character-getmaxhp" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: 最大HPを取得します。</p></li>
+</ul>
+</section>
+<section id="character-getattackpower">
+<h4><a class="reference internal" href="../../api/Character.html#_CPPv4NK9Character14getAttackPowerEv" title="Character::getAttackPower"><code class="xref cpp cpp-func docutils literal notranslate"><span class="pre">Character::getAttackPower()</span></code></a><a class="headerlink" href="#character-getattackpower" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><strong>説明</strong>: 攻撃力を取得します。</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Sphinx Tutorial</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="検索" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>ナビゲーション</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">仕様書</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../core/gamemanager.html">GameManager Class</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Character Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hero.html">Hero Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="monster.html">Monster Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skill.html">Skill Class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../utils/dice.html">Dice Class</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_reference.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../other/index.html">Sphinx Tutorial documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">仕様書</a><ul>
+      <li>Previous: <a href="../core/gamemanager.html" title="前の章へ">GameManager Class</a></li>
+      <li>Next: <a href="hero.html" title="次の章へ">Hero Class</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, Ryota Amano.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../_sources/specification/models/character.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

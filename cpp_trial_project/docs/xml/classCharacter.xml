@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classCharacter" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Character</compoundname>
+    <derivedcompoundref refid="classHero" prot="public" virt="non-virtual">Hero</derivedcompoundref>
+    <derivedcompoundref refid="classMonster" prot="public" virt="non-virtual">Monster</derivedcompoundref>
+    <includes refid="Character_8h" local="no">Character.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classCharacter_1a6592c35167738421f3e04ca8808d37db" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Character::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>The name of the character. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="77" column="17" bodyfile="include/models/Character.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCharacter_1a273353643988a87a0ce03cff3870b2d9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Character::hp</definition>
+        <argsstring></argsstring>
+        <name>hp</name>
+        <briefdescription>
+<para>Current hit points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="78" column="9" bodyfile="include/models/Character.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Character::maxHp</definition>
+        <argsstring></argsstring>
+        <name>maxHp</name>
+        <briefdescription>
+<para>Maximum hit points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="79" column="9" bodyfile="include/models/Character.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Character::attackPower</definition>
+        <argsstring></argsstring>
+        <name>attackPower</name>
+        <briefdescription>
+<para>Base attack power. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="80" column="9" bodyfile="include/models/Character.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Character::Character</definition>
+        <argsstring>(std::string name, int hp, int attackPower)</argsstring>
+        <name>Character</name>
+        <param>
+          <type>std::string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>attackPower</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for <ref refid="classCharacter" kindref="compound">Character</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the character. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>hp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initial (and maximum) hit points. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attackPower</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The base attack power. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="22" column="5" bodyfile="src/models/Character.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a3333a88ae593c36b229c90371e935d42" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Character::~Character</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Character</name>
+        <briefdescription>
+<para>Virtual destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="27" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1ae785f187fe5c904f7e4b4984b3837739" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Character::attack</definition>
+        <argsstring>(Character &amp;target)=0</argsstring>
+        <name>attack</name>
+        <reimplementedby refid="classHero_1af79301a44fe68ebea2076fb6fcfe9f7f">attack</reimplementedby>
+        <reimplementedby refid="classMonster_1a2b003d9c2b17d30f3d7f514c1195eadb">attack</reimplementedby>
+        <param>
+          <type><ref refid="classCharacter" kindref="compound">Character</ref> &amp;</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+<para>Pure virtual function for attacking a target. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>target</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character to attack. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="34" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a5b06cc242690c9af1610c33e895348e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Character::takeDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>takeDamage</name>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+<para>Inflicts damage on the character. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reduces HP by the specified amount. HP will not drop below 0.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>damage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of damage to take. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="43" column="18" bodyfile="src/models/Character.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a6581a9a16111768ae65603d060fca9d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Character::isDead</definition>
+        <argsstring>() const</argsstring>
+        <name>isDead</name>
+        <briefdescription>
+<para>Checks if the character is dead. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true if HP is 0 or less, false otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="50" column="10" bodyfile="src/models/Character.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1ad79f892fe576c7ef0804cad502d94517" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Character::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+<para>Gets the character&apos;s name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The name of the character. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="56" column="17" bodyfile="src/models/Character.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Character::getHp</definition>
+        <argsstring>() const</argsstring>
+        <name>getHp</name>
+        <briefdescription>
+<para>Gets the current HP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current hit points. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="62" column="9" bodyfile="src/models/Character.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Character::getMaxHp</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxHp</name>
+        <briefdescription>
+<para>Gets the maximum HP. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The maximum hit points. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="68" column="9" bodyfile="src/models/Character.cpp" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Character::getAttackPower</definition>
+        <argsstring>() const</argsstring>
+        <name>getAttackPower</name>
+        <briefdescription>
+<para>Gets the attack power. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The attack power. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Character.h" line="74" column="9" bodyfile="src/models/Character.cpp" bodystart="28" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract base class for all characters in the game. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines common attributes like name, HP, and attack power, as well as common behaviors like taking damage. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Character</label>
+        <link refid="classCharacter"/>
+      </node>
+      <node id="3">
+        <label>Monster</label>
+        <link refid="classMonster"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Hero</label>
+        <link refid="classHero"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="include/models/Character.h" line="13" column="1" bodyfile="include/models/Character.h" bodystart="13" bodyend="81"/>
+    <listofallmembers>
+      <member refid="classCharacter_1ae785f187fe5c904f7e4b4984b3837739" prot="public" virt="pure-virtual"><scope>Character</scope><name>attack</name></member>
+      <member refid="classCharacter_1ac1c673b9fc670f1e3007a22e9d0d616d" prot="protected" virt="non-virtual"><scope>Character</scope><name>attackPower</name></member>
+      <member refid="classCharacter_1a032a36e9ceb12d9b8f8345310643a637" prot="public" virt="non-virtual"><scope>Character</scope><name>Character</name></member>
+      <member refid="classCharacter_1a53f2907282a51f3ad6a8152967eb2e05" prot="public" virt="non-virtual"><scope>Character</scope><name>getAttackPower</name></member>
+      <member refid="classCharacter_1a5498d08a9dbfa968420ea8f5cb98ec3d" prot="public" virt="non-virtual"><scope>Character</scope><name>getHp</name></member>
+      <member refid="classCharacter_1a112f95c4f9e8a7e1b8785560bebdb738" prot="public" virt="non-virtual"><scope>Character</scope><name>getMaxHp</name></member>
+      <member refid="classCharacter_1ad79f892fe576c7ef0804cad502d94517" prot="public" virt="non-virtual"><scope>Character</scope><name>getName</name></member>
+      <member refid="classCharacter_1a273353643988a87a0ce03cff3870b2d9" prot="protected" virt="non-virtual"><scope>Character</scope><name>hp</name></member>
+      <member refid="classCharacter_1a6581a9a16111768ae65603d060fca9d7" prot="public" virt="non-virtual"><scope>Character</scope><name>isDead</name></member>
+      <member refid="classCharacter_1a39fd1fe17224ce4aae67ae08848533e6" prot="protected" virt="non-virtual"><scope>Character</scope><name>maxHp</name></member>
+      <member refid="classCharacter_1a6592c35167738421f3e04ca8808d37db" prot="protected" virt="non-virtual"><scope>Character</scope><name>name</name></member>
+      <member refid="classCharacter_1a5b06cc242690c9af1610c33e895348e2" prot="public" virt="virtual"><scope>Character</scope><name>takeDamage</name></member>
+      <member refid="classCharacter_1a3333a88ae593c36b229c90371e935d42" prot="public" virt="virtual"><scope>Character</scope><name>~Character</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

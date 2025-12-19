@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Skill_8h" kind="file" language="C++">
+    <compoundname>Skill.h</compoundname>
+    <includes local="no">string</includes>
+    <includedby refid="Hero_8h" local="yes">include/models/Hero.h</includedby>
+    <includedby refid="Skill_8cpp" local="yes">src/models/Skill.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>include/models/Skill.h</label>
+        <link refid="Skill_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
+        <label>src/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="4">
+        <label>src/core/GameManager.cpp</label>
+        <link refid="GameManager_8cpp"/>
+      </node>
+      <node id="2">
+        <label>include/models/Hero.h</label>
+        <link refid="Hero_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>src/models/Hero.cpp</label>
+        <link refid="Hero_8cpp"/>
+      </node>
+      <node id="7">
+        <label>src/models/Skill.cpp</label>
+        <link refid="Skill_8cpp"/>
+      </node>
+      <node id="3">
+        <label>include/core/GameManager.h</label>
+        <link refid="GameManager_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/models/Skill.h</label>
+        <link refid="Skill_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classSkill" prot="public">Skill</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="Skill_8h_1af4541d30ebbff76b1f9f689519789234" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>SkillType</name>
+        <enumvalue id="Skill_8h_1af4541d30ebbff76b1f9f689519789234ac6ddd0f72ff2fd344693b9ca8d483871" prot="public">
+          <name>ATTACK</name>
+          <briefdescription>
+<para>Offensive skill that deals damage. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="Skill_8h_1af4541d30ebbff76b1f9f689519789234a3a25f1406daa84785c1291a745018fae" prot="public">
+          <name>HEAL</name>
+          <briefdescription>
+<para>Support skill that restores HP. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enumeration of skill types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/models/Skill.h" line="9" column="1" bodyfile="include/models/Skill.h" bodystart="9" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SKILL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SKILL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234ac6ddd0f72ff2fd344693b9ca8d483871" kindref="member">ATTACK</ref>,<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234a3a25f1406daa84785c1291a745018fae" kindref="member">HEAL</ref><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classSkill" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSkill" kindref="compound">Skill</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSkill_1ac647fa947e889de5019dd2735c7b420c" kindref="member">Skill</ref>(std::string<sp/><ref refid="classSkill_1a1271744546e69259d6ac31013900c49e" kindref="member">name</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" kindref="member">mpCost</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" kindref="member">power</ref>,<sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/><ref refid="classSkill_1a8deae6639996545a133cf1b17d082425" kindref="member">type</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" kindref="member">getName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a992060b5dd051b5de10fa2a8434a9616" kindref="member">getMpCost</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" kindref="member">getPower</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/><ref refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56" refid="classSkill_1a1271744546e69259d6ac31013900c49e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classSkill_1a1271744546e69259d6ac31013900c49e" kindref="member">name</ref>;<sp/></highlight></codeline>
+<codeline lineno="57" refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" kindref="member">mpCost</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58" refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" kindref="member">power</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59" refid="classSkill_1a8deae6639996545a133cf1b17d082425" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/><ref refid="classSkill_1a8deae6639996545a133cf1b17d082425" kindref="member">type</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>SKILL_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="include/models/Skill.h"/>
+  </compounddef>
+</doxygen>

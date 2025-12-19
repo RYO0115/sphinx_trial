@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="Skill_8cpp" kind="file" language="C++">
+    <compoundname>Skill.cpp</compoundname>
+    <includes refid="Skill_8h" local="yes">models/Skill.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>string</label>
+      </node>
+      <node id="1">
+        <label>src/models/Skill.cpp</label>
+        <link refid="Skill_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>models/Skill.h</label>
+        <link refid="Skill_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Skill_8h" kindref="compound">models/Skill.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classSkill_1ac647fa947e889de5019dd2735c7b420c" refkind="member"><highlight class="normal"><ref refid="classSkill_1ac647fa947e889de5019dd2735c7b420c" kindref="member">Skill::Skill</ref>(std::string<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mpCost,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>power,<sp/><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/>type)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/>name(name),<sp/>mpCost(mpCost),<sp/>power(power),<sp/>type(type)<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" refkind="member"><highlight class="normal">std::string<sp/><ref refid="classSkill_1ab5876402c7153dedc92feb4143c21b35" kindref="member">Skill::getName</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a1271744546e69259d6ac31013900c49e" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classSkill_1a992060b5dd051b5de10fa2a8434a9616" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a992060b5dd051b5de10fa2a8434a9616" kindref="member">Skill::getMpCost</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a4e919b6ef9f83212a4cb07e9d8e9998f" kindref="member">mpCost</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a89a94f8c1c3df2ed4699f74a3351ef7d" kindref="member">Skill::getPower</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSkill_1ada72ab52bf0c12055497ce64100e82bc" kindref="member">power</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" refkind="member"><highlight class="normal"><ref refid="Skill_8h_1af4541d30ebbff76b1f9f689519789234" kindref="member">SkillType</ref><sp/><ref refid="classSkill_1a1faff4b784bdfd645ac7344c2ff228d1" kindref="member">Skill::getType</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classSkill_1a8deae6639996545a133cf1b17d082425" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/models/Skill.cpp"/>
+  </compounddef>
+</doxygen>
